@@ -1,11 +1,20 @@
-<h1> Vanessa Seto </h1>
+<body>
+  <h1> Vanessa Seto </h1>
 
-<div class="topnav">
-  <a class="active" href="#Portfolio">PORTFOLIO</a>
-  <a href="#About">ABOUT</a>
-  <a href="#Blog">BLOG</a>
-  <a href="#Resume">RESUME</a>
-</div>
+  <div class="topnav">
+    <a class="active" href="#Portfolio">PORTFOLIO</a>
+    <a href="#About">ABOUT</a>
+    <a href="#Blog">BLOG</a>
+    <a href="#Resume">RESUME</a>
+  </div>
+  
+  <div class="typewriter">
+    <h2>The cat and the hat.</h2>
+  </div>
+  
+</body>
+
+
 
 <style> 
 
@@ -17,7 +26,14 @@
    padding-top: 5%;
    font-weight: lighter;
    }
-
+  
+  h2 {
+   font-family: quattrocento sans;
+   font-size: 20px; 
+   float: center;
+   text-align: center;
+   }
+  
   .topnav {
     background-color: #fff;
     overflow: hidden;
@@ -43,6 +59,30 @@
   /* Add a color to the active/current link */
   .topnav a.active {
     color: #878787;
+  }
+  
+  /* Typewriter effect */
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
   }
 
 </style>
